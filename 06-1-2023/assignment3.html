@@ -14,7 +14,7 @@
                    
                 var amount = Number(Amount1);
 
-                 console.log("Hi " + name + " the amount you want to send is " + amount + " The environment is " + environment + "");
+                 document.write(" Hi " + name + "<br> The amount you want to send is " + amount + "<br> The environment is " + environment + "<br>");
                  var env = String(environment); 
                         env=env.toLowerCase();
 
@@ -41,30 +41,32 @@
                     switch(env){
                         case 'dev':
                             sentAmount = amount+amount*0.1;
-                            console.log('sentAmount = ' + sentAmount);
+                            document.write('sentAmount = ' + sentAmount);
                             break;
                         case 'test':
                             sentAmount = amount+amount*0.2;
-                            console.log('sentAmount = ' + sentAmount);
+                            document.write('sentAmount = ' + sentAmount);
                             break;
                         case 'stage':
                             sentAmount = amount+amount*0.3;
-                            console.log('sentAmount = ' + sentAmount);
+                            document.write('sentAmount = ' + sentAmount);
                             break;  
                         case 'prod':
                             sentAmount = amount+amount*0.05;
-                            console.log('sentAmount = ' + sentAmount);
+                            document.write('sentAmount = ' + sentAmount);
                             break;  
                         default:     
-                            console.log('This environment does not exist');
+                            document.write('This environment does not exist');
                             break;      
 
                     }
 
-                    
+               
 
 
             </script>
+
+
 
 
         </body>
