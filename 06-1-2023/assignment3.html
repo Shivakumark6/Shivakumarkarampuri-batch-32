@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+        <body>
+
+            <script>
+
+                var name = prompt("Enter your name");
+                var Amount1 = prompt("Enter the amount you want to send");
+                var environment = prompt("Enter your environment : DEV / TEST / STAGE/ PROD");
+                 
+                   
+                var amount = Number(Amount1);
+
+                 console.log("Hi " + name + " the amount you want to send is " + amount + " The environment is " + environment + "");
+                 var env = String(environment); 
+                        env=env.toLowerCase();
+
+                    // if(env = 'dev' || 'd'||'Dev'||'D'){
+
+                    //     env = 'dev';
+
+                    // }else if(env = 'test'||'t'||'Test'||'T' ){
+                    //     env = 'test';
+
+                    // }else if(env = 'stage'||'s'||'Stage'||'S'){
+                    //     env = 'stage';
+
+                    // }else if(env = 'prod'||'p'||'Prod'||'P'){
+
+                    //     env = 'prod';
+                    // }else {
+
+                    //     console.log("This Environment doesn't exist");
+                    // }
+                        
+                                          
+
+                    switch(env){
+                        case 'dev':
+                            sentAmount = amount+amount*0.1;
+                            console.log('sentAmount = ' + sentAmount);
+                            break;
+                        case 'test':
+                            sentAmount = amount+amount*0.2;
+                            console.log('sentAmount = ' + sentAmount);
+                            break;
+                        case 'stage':
+                            sentAmount = amount+amount*0.3;
+                            console.log('sentAmount = ' + sentAmount);
+                            break;  
+                        case 'prod':
+                            sentAmount = amount+amount*0.05;
+                            console.log('sentAmount = ' + sentAmount);
+                            break;  
+                        default:     
+                            console.log('This environment does not exist');
+                            break;      
+
+                    }
+
+                    
+
+
+            </script>
+
+
+        </body>
+    
+
+</html>
