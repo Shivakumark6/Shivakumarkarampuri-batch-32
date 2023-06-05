@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>javascript Functions</h1>
+    </head>
+
+    <body>
+
+        <script>
+
+        let myHobbies = ['a', 'b', 'c','d','e'];
+
+            function hobbies (){ 
+            return myHobbies ;
+            
+            }
+
+         document.write(hobbies()+"<br>");
+
+            function addHobby(addinghobby){
+            myHobbies.push(addinghobby);
+
+            }
+            addHobby('f');
+            document.write(hobbies()+"<br>");
+
+
+            function deleteHobby(deletinghobby){
+
+            const index = myHobbies.indexOf(deletinghobby);
+             if (index > -1) {
+            myHobbies.splice(index, 1);  
+            }
+        }
+            deleteHobby('c');
+            
+            document.write(hobbies());
+
+    
+            //  myHobbies.pop(deletinghobby); 
+             
+
+            
+           
+
+        </script>
+       
+
+    </body>
+
+
+</html>
