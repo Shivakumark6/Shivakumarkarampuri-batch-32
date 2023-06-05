@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <script>
-      let hobbies = ["Playing cricket", "hiking", "Cooking", "mobile games", "badminton"];
 
-      function getHobbies() {
-        return hobbies;
-      }
+<body>
+  <script>
+    let hobbies = ["Playing cricket", "hiking", "Cooking", "mobile games", "badminton"];
 
-      function addHobby(newHobby) {
-         hobbies.push(newHobby);
-      }
+    function getHobbies() {
+      return hobbies;
+    }
 
-      function deleteHobby(hobbyToDelete) {
+    function addHobby(newHobby) {
+      hobbies.push(newHobby);
+    }
+
+    function deleteHobby(hobbyToDelete) {
       const index = hobbies.indexOf(hobbyToDelete);
       if (index > -1) {
-       hobbies.splice(index, 1);
-        }
-          }
+        hobbies.splice(index, 1);
+      }
+    }
 
 
-        console.log(getHobbies());
+    console.log(getHobbies());
 
 
-        addHobby("painting");
-        console.log(getHobbies());
+    addHobby("painting");
+    console.log(getHobbies());
 
 
-      deleteHobby("Cooking");
-      console.log(getHobbies());
+    deleteHobby("Cooking");
+    console.log(getHobbies());
 
-        </script>
-    </body>
+  </script>
+</body>
+
 </html>
